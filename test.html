@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<video id="myVideo" controls preload="auto">
+    <!--<source src="media/SignalE13.mp4" type="video/mp4">-->
+    <source src="public/media/ogg-19M.ogg" type="video/mp4"/>
+</video>
+<button onclick="aClick()">点我</button>
+<script>
+    var myVideo = document.getElementById('myVideo');
+
+    function aClick() {
+        myVideo.currentTime = 20;
+        myVideo.play();
+    }
+</script>
+</body>
+</html>

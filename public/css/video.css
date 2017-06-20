@@ -1,0 +1,134 @@
+body{
+    font-size: 62.5%;
+}
+ul {
+    list-style: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/*-----------------主体部分-----------*/
+.section-main {
+    width: 79.45578331%;
+    /*background-color: #0f0f0f;*/
+    margin: 0 auto;
+}
+/*----------视频区域---------*/
+#myVideo {
+    width: 100%;
+    /*height: 610px;*/
+}
+/*---------控制菜单区域------*/
+.controlFrame {
+    width: 100%;
+    height: 45px;
+    /*outline: 1px solid brown;*/
+    position: relative;
+    top: -49px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear;
+}
+.section-main:hover .controlFrame {
+    opacity: 1;
+    visibility: visible;
+}
+/*-----进度条框-----*/
+.progressFrame {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(62, 62, 62, 0.8);
+    position: relative;
+}
+/*--进度条框_缓存进度条--*/
+.cacheBar {
+    position: absolute;
+    /*width: 50%;*/
+    height: 100%;
+    background-color: rgba(124, 124, 124, 0.44);
+}
+/*--进度条框_观看进度条--*/
+.progressNowBar {
+    position: absolute;
+    width: 0.4668%;
+    height: 100%;
+    background-color: #E03835;
+}
+/*进度条框_观看点*/
+.progressPoint {
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(253, 253, 253, 0.98);
+    border-radius: 50% 50%;
+}
+/*-----控制菜单-----*/
+.controlMenu {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(41, 41, 41, 0.97);
+}
+.controlMenu li {
+    height: 35px;
+    line-height: 30px;
+    padding: 3px 0 3px 0;
+}
+.controlMenu li i {
+    color: rgba(167, 167, 167, 0.89);
+    /*font-size: 2em;*/
+}
+.controlMenu li i:hover{
+    color: #E03835;
+    transform: scale(1.1);
+}
+.playAndPause,.nextEpisode,.currentAndAllTime {
+    float: left;
+    margin-left: 20px;
+}
+.voice,.voiceControl,.definition,.setUp,.fullScreen{
+    float: right;
+    margin-right: 20px;
+}
+/*播放/暂停*/
+.playAndPause {
+    font-size: 2.4em;
+}
+.currentAndAllTime{
+    color: rgba(222, 222, 222, 0.98);
+}
+.allTime {
+    color: rgba(191, 191, 191, 0.98);
+}
+
+/*有声音/静音*/
+.voice {
+    margin-right: 10px;
+}
+.voice i{
+    font-size: 2em;
+}
+/*声音控制条*/
+
+.voiceControl-frame {
+    width: 60px;
+    height: 3px;
+    background-color: rgba(62, 62, 62, 0.8);;
+    margin-top: 11px;
+    position: relative;
+}
+.voiceNowBar {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(167, 167, 167, 0.89);
+}
+.voiceControlPoint {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(167, 167, 167, 0.89);
+    border-radius: 50% 50%;
+    top: -3px;
+    left: 50%;
+}

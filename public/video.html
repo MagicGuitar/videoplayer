@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+<section class="section-main">
+    <!-----------视频区域--------->
+    <video id="myVideo" preload="metadata">
+        <source src="media/SignalE13.mp4" type="video/mp4"/>
+        <!--<source src="media/ogg-19M.ogg" type="video/mp4"/>-->
+    </video>
+    <!---------控制菜单区域-------->
+    <section class="controlFrame">
+        <!-----进度条框----->
+        <div class="progressFrame">
+            <div class="cacheBar"></div><!--进度条框_缓存进度条-->
+            <div class="progressNowBar"></div><!--进度条框_观看进度条-->
+            <div class="progressPoint"></div><!--进度条框_观看点-->
+        </div>
+        <!-----控制菜单----->
+        <ul class="controlMenu">
+            <li class="playAndPause">
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </li><!--暂停播放按钮-->
+            <!--<li class="nextEpisode">-->
+                <!--<i class="fa fa-forward" aria-hidden="true"></i>-->
+            <!--</li>&lt;!&ndash;下一集按钮&ndash;&gt;-->
+            <li class="currentAndAllTime">
+                <!--当前播放时间-->
+                <span class="currentTime">00:00</span>&nbsp;/
+                <!--总时间-->
+                <span class="allTime"></span>
+            </li><!--当前播放时间/总时间-->
+            <li class="fullScreen">
+                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            </li><!--全屏-->
+            <!--<li class="setUp">-->
+                <!--<i class="fa fa-cog" aria-hidden="true"></i>-->
+            <!--</li>&lt;!&ndash;设置&ndash;&gt;-->
+            <!--<li class="definition">-->
+                <!--超清-->
+            <!--</li>&lt;!&ndash;清晰度&ndash;&gt;-->
+            <li class="voiceControl">
+                <div class="voiceControl-frame">
+                    <div class="voiceNowBar"></div>
+                    <div class="voiceControlPoint"></div>
+                </div>
+            </li><!--声音控制-->
+            <li class="voice">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </li><!--声音-->
+        </ul>
+    </section>
+</section>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/video.js"></script>
+</body>
+</html>
